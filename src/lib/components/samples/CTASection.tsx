@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image, Link } from '@chakra-ui/react';
 import { AiFillGithub } from 'react-icons/ai';
 
-const repoName = 'cra-chakra-ts';
+const repoName = 'react-chakra-rsbuild';
 const repoLink = `https://github.com/sozonome/${repoName}`;
 
 const CTASection = () => {

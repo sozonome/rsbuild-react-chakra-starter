@@ -14,7 +14,7 @@ const SomeText = () => {
         bgGradient="linear(to-br, teal.200, blue.600)"
         bgClip="text"
       >
-        cra-chakra-ts
+        react-chakra-rsbuild
       </Heading>
       <Text fontSize={textSize} color="gray.500">
         This is a create-react-app project with Chakra-UI and TypeScript setup.
