@@ -1,6 +1,6 @@
 # react-chakra-rsbuild
 
-This is a project bootstrapped with [`create-react-app`](https://create-react-app.dev/), added with [Chakra UI](https://chakra-ui.com) and [TypeScript](https://www.typescriptlang.org) setup.
+This is a project bootstrapped with [`create-react-app`](https://create-react-app.dev/), converted to rsbuild, added with [Chakra UI](https://chakra-ui.com) and [TypeScript](https://www.typescriptlang.org) setup.
 
 - 🔗 route management added (`react-router-dom` configured)
 
@@ -33,3 +33,4 @@ pnpm start
 - [Create React App](https://create-react-app.dev/)
 - [Chakra UI](https://chakra-ui.com/)
 - [TypeScript](https://www.typescriptlang.org)
+- https://rsbuild.dev/guide/advanced/env-vars#public-variables
