@@ -1,6 +1,6 @@
 import { Skeleton } from '@chakra-ui/react';
 import { Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import { routes } from './routes';
 

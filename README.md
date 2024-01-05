@@ -24,6 +24,8 @@ Then, run the development server:
 pnpm start
 ```
 
+> 💡 If you're a VS Code user, you can copy the `.vscode/settings.template.json` file to `.vscode/settings.json`.
+
 ## Deployment
 
 - build command: `pnpm build`

@@ -20,10 +20,10 @@
     "dev": "rsbuild dev",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix && pnpm format",
+    "lint": "pnpm dlx @biomejs/biome lint ./src",
+    "toolchain:fix": "pnpm dlx @biomejs/biome check --apply ./src rsbuild.config.ts commitlint.config.js",
     "type-check": "tsc --noEmit",
-    "format": "prettier --write src",
+    "check:turbo": "npx turbo lint type-check",
     "up-interactive": "pnpm up -i",
     "up-latest": "pnpm up-interactive -L",
     "release": "cross-env HUSKY=0 standard-version",
@@ -43,6 +43,8 @@
     ]
   },
   "devDependencies": {
+    "@biomejs/biome": "1.4.1",
+    "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.3",
     "@commitlint/cz-commitlint": "^18.4.3",
     "@rsbuild/core": "^0.2.14",
@@ -60,12 +62,9 @@
     "@types/react-dom": "^18.2.18",
     "@types/react-helmet": "^6.1.11",
     "commitizen": "^4.3.0",
-    "commitlint": "^18.4.3",
     "cross-env": "^7.0.3",
-    "eslint-config-sznm": "^2.0.2",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
-    "prettier": "^3.1.1",
     "standard-version": "^9.5.0",
     "typescript": "^5.3.3"
   }
