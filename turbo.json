@@ -1,0 +1,16 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "type-check": {
+      "outputs": ["*.tsbuildinfo"]
+    },
+    "build": {
+      "outputs": ["dist/**", "public/**"],
+      "env": []
+    },
+    "lint": {
+      "outputs": [],
+      "inputs": ["biome.json", "src/**"]
+    }
+  }
+}
