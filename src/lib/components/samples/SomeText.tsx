@@ -17,7 +17,7 @@ const SomeText = () => {
         rsbuild-react-chakra-starter
       </Heading>
       <Text fontSize={textSize} color="gray.500">
-        This is a create-react-app project with Chakra-UI and TypeScript setup.
+        This is a rsbuild react project with Chakra-UI and TypeScript setup.
       </Text>
     </Grid>
   );

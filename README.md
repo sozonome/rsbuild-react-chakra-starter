@@ -32,7 +32,7 @@ pnpm start
 
 ## References
 
-- [Create React App](https://create-react-app.dev/)
+- [rsbuild](https://rsbuild.dev/)
+  - https://rsbuild.dev/guide/advanced/env-vars#public-variables
 - [Chakra UI](https://chakra-ui.com/)
 - [TypeScript](https://www.typescriptlang.org)
-- https://rsbuild.dev/guide/advanced/env-vars#public-variables
