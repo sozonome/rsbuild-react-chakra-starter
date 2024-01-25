@@ -3,7 +3,9 @@ import { pluginAssetsRetry } from '@rsbuild/plugin-assets-retry';
 import { pluginReact } from '@rsbuild/plugin-react';
 import { pluginSvgr } from '@rsbuild/plugin-svgr';
 import { pluginTypeCheck } from '@rsbuild/plugin-type-check';
+import { RsdoctorRspackPlugin } from '@rsdoctor/rspack-plugin';
 import million from 'million/compiler';
+import path from 'path';
 
 export default defineConfig({
   // https://rsbuild.dev/plugins/list/index
@@ -19,7 +21,14 @@ export default defineConfig({
   tools: {
     // https://rsbuild.dev/config/plugins#rspack-plugins
     rspack: {
-      plugins: [million.webpack({ auto: true })],
+      plugins: [
+        million.webpack({ auto: true }),
+        new RsdoctorRspackPlugin({
+          features: {
+            loader: false,
+          },
+        }),
+      ].filter(Boolean),
     },
   },
   dev: {
