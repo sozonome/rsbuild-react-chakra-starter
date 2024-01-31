@@ -25,7 +25,7 @@
     "lint": "pnpm dlx biome lint ./src",
     "toolchain:fix": "pnpm dlx biome check --apply ./src rsbuild.config.ts commitlint.config.js",
     "type-check": "tsc --noEmit",
-    "check:turbo": "npx turbo lint type-check",
+    "check:turbo": "pnpm dlx turbo@latest lint type-check",
     "up-interactive": "pnpm up -i",
     "up-latest": "pnpm up-interactive -L",
     "release": "cross-env HUSKY=0 standard-version",
