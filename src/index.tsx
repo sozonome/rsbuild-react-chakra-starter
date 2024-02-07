@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client';
 // fonts
 import '@fontsource/plus-jakarta-sans/latin.css';
 
-import { customTheme } from 'lib/styles/customTheme';
+import { customTheme } from '@/lib/styles/customTheme';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
