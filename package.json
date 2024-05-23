@@ -8,14 +8,14 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/plus-jakarta-sans": "^5.0.20",
-    "framer-motion": "^11.1.7",
-    "million": "^3.0.6",
+    "framer-motion": "^11.2.6",
+    "million": "^3.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "react-icons": "^5.2.0",
-    "react-router-dom": "^6.23.0",
-    "web-vitals": "^3.5.2"
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.23.1",
+    "web-vitals": "^4.0.1"
   },
   "scripts": {
     "dev": "rsbuild dev",
@@ -45,30 +45,35 @@
     ]
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.2",
+    "@biomejs/biome": "1.7.3",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/cz-commitlint": "^19.2.0",
-    "@rsbuild/core": "^0.6.9",
-    "@rsbuild/plugin-assets-retry": "^0.6.9",
-    "@rsbuild/plugin-image-compress": "^0.6.9",
-    "@rsbuild/plugin-react": "^0.6.9",
-    "@rsbuild/plugin-svgr": "^0.6.9",
-    "@rsbuild/plugin-type-check": "^0.6.9",
-    "@rsdoctor/rspack-plugin": "^0.2.2",
+    "@rsbuild/core": "^0.6.15",
+    "@rsbuild/plugin-assets-retry": "^0.6.15",
+    "@rsbuild/plugin-image-compress": "^0.6.15",
+    "@rsbuild/plugin-react": "^0.6.15",
+    "@rsbuild/plugin-svgr": "^0.6.15",
+    "@rsbuild/plugin-type-check": "^0.6.15",
+    "@rsdoctor/rspack-plugin": "^0.2.4",
     "@testing-library/jest-dom": "^6.4.5",
-    "@testing-library/react": "^15.0.6",
+    "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.12.8",
-    "@types/react": "^18.3.1",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "@types/react-helmet": "^6.1.11",
     "commitizen": "^4.3.0",
     "cross-env": "^7.0.3",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^15.2.4",
     "standard-version": "^9.5.0",
     "typescript": "^5.4.5"
-  }
+  },
+  "engines": {
+    "node": ">=18.20.x",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9.1.1"
 }
