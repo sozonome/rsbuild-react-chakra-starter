@@ -19,9 +19,6 @@ export default defineConfig({
   tools: {
     // https://rsbuild.dev/config/plugins#rspack-plugins
     rspack(config, { appendPlugins }) {
-      // enable when million is compatible again with rspack
-      // appendPlugins(million.webpack({ auto: true }));
-
       // Only register the plugin when RSDOCTOR is true, as the plugin will increase the build time.
       if (process.env.RSDOCTOR) {
         appendPlugins(
