@@ -24,7 +24,7 @@
     "lint": "biome lint ./src",
     "toolchain:fix": "biome check --apply ./src rsbuild.config.ts commitlint.config.js",
     "type-check": "tsc --noEmit",
-    "turbo": "pnpm dlx turbo@2.0.1",
+    "turbo": "pnpm dlx turbo@2.0.9",
     "check:turbo": "pnpm turbo lint type-check",
     "up-interactive": "pnpm up -i",
     "up-latest": "pnpm up-interactive -L",
