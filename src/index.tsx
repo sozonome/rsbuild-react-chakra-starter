@@ -7,7 +7,7 @@ import '@fontsource/plus-jakarta-sans/latin.css';
 
 import { customTheme } from '@/lib/styles/customTheme';
 
-import App from './App';
+import { App } from './app';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(

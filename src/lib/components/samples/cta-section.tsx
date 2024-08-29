@@ -4,7 +4,7 @@ import { AiFillGithub } from 'react-icons/ai';
 const repoName = 'rsbuild-react-chakra-starter';
 const repoLink = `https://github.com/sozonome/${repoName}`;
 
-const CTASection = () => {
+export const CTASection = () => {
   return (
     <Box textAlign="center" marginTop={8}>
       <Flex marginY={4} justifyContent="center" gridGap={2}>
@@ -62,5 +62,3 @@ const CTASection = () => {
     </Box>
   );
 };
-
-export default CTASection;

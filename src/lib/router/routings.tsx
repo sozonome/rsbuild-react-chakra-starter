@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { routes } from './routes';
 
-const Routings = () => {
+export const Routings = () => {
   return (
     <Suspense fallback={<Skeleton />}>
       <Routes>
@@ -15,5 +15,3 @@ const Routings = () => {
     </Suspense>
   );
 };
-
-export default Routings;

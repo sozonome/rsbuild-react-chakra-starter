@@ -1,6 +1,6 @@
 import { Grid, Heading, Text, useBreakpointValue } from '@chakra-ui/react';
 
-const SomeText = () => {
+export const SomeText = () => {
   const textSize = useBreakpointValue({
     base: 'xs',
     sm: 'sm',
@@ -22,5 +22,3 @@ const SomeText = () => {
     </Grid>
   );
 };
-
-export default SomeText;
