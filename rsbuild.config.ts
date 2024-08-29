@@ -29,8 +29,8 @@ export default defineConfig({
       }
     },
   },
-  dev: {
-    // https://rsbuild.dev/config/dev/start-url#starturl
-    startUrl: true,
+  server: {
+    // https://rsbuild.dev/config/server/open
+    open: true,
   },
 });
