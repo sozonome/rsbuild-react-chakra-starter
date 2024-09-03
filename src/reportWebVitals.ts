@@ -12,4 +12,5 @@ const reportWebVitals = (onPerfEntry?: ReportCallback) => {
   }
 };
 
+// biome-ignore lint/style/noDefaultExport: <explanation>
 export default reportWebVitals;
