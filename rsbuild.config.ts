@@ -4,6 +4,7 @@ import { pluginReact } from '@rsbuild/plugin-react';
 import { pluginSvgr } from '@rsbuild/plugin-svgr';
 import { pluginTypeCheck } from '@rsbuild/plugin-type-check';
 import { RsdoctorRspackPlugin } from '@rsdoctor/rspack-plugin';
+import { pluginImageCompress } from '@rsbuild/plugin-image-compress';
 
 export default defineConfig({
   // https://rsbuild.dev/plugins/list/index
@@ -12,6 +13,7 @@ export default defineConfig({
     pluginSvgr(),
     pluginAssetsRetry(),
     pluginTypeCheck(),
+    pluginImageCompress(),
   ],
   html: {
     template: './public/index.html',

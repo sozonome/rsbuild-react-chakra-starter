@@ -22,7 +22,7 @@
   },
   "overrides": [
     {
-      "include": ["src/lib/pages/**/*", "rsbuild.config.ts"],
+      "include": ["src/lib/pages/**/*", "*.config.ts"],
       "linter": {
         "rules": {
           "style": {
