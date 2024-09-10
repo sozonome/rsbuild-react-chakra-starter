@@ -10,8 +10,48 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "error",
+        "useSimplifiedLogicExpression": "error"
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error",
+        "useHookAtTopLevel": "error"
+      },
+      "nursery": {
+        "noConsole": "error",
+        "noUnusedFunctionParameters": "error",
+        "noUselessStringConcat": "error",
+        "noUselessUndefinedInitialization": "error",
+        "useDefaultSwitchClause": "error",
+        "useSemanticElements": "error",
+        "useTopLevelRegex": "error"
+      },
+      "performance": {
+        "noBarrelFile": "error"
+      },
       "style": {
-        "noDefaultExport": "error"
+        "noDefaultExport": "error",
+        "useBlockStatements": "error",
+        "useCollapsedElseIf": "error",
+        "useConsistentArrayType": {
+          "level": "error",
+          "options": {
+            "syntax": "generic"
+          }
+        },
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "filenameCases": ["kebab-case"]
+          }
+        }
+      },
+      "suspicious": {
+        "noConsoleLog": "error",
+        "noEmptyBlockStatements": "error",
+        "useAwait": "error"
       }
     }
   },
@@ -22,7 +62,7 @@
   },
   "overrides": [
     {
-      "include": ["src/lib/pages/**/*", "*.config.ts"],
+      "include": ["src/lib/pages/**/*", "*.ts"],
       "linter": {
         "rules": {
           "style": {
