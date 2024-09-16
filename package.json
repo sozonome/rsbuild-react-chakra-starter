@@ -22,6 +22,7 @@
     "preview": "rsbuild preview",
     "biome:check": "biome check",
     "biome:fix": "pnpm biome:check --write",
+    "biome:ci": "biome ci",
     "type:check": "tsc --noEmit",
     "turbo": "pnpm dlx turbo@2.0.9",
     "check:turbo": "pnpm turbo biome:check type:check",
