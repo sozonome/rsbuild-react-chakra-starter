@@ -1,16 +1,18 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
-    "type-check": {
+    "type:check": {
+      "inputs": ["tsconfig.json", "src/**"],
       "outputs": ["*.tsbuildinfo"]
     },
-    "build": {
-      "outputs": ["dist/**", "public/**"],
-      "env": []
-    },
-    "lint": {
+    "biome:check": {
       "outputs": [],
       "inputs": ["biome.json", "src/**"]
+    },
+    "build": {
+      "dependsOn": ["type:check", "biome:check"],
+      "outputs": ["dist/**", "public/**"],
+      "env": []
     }
   }
 }
