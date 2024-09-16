@@ -3,6 +3,29 @@
   "version": "0.1.0",
   "author": "sozonome",
   "private": true,
+  "engines": {
+    "node": ">=20.14.x",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9.1.1",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "build-and-analyze": "cross-env RSDOCTOR=true pnpm build",
+    "preview": "rsbuild preview",
+    "biome:check": "biome check",
+    "biome:fix": "pnpm biome:check --write",
+    "biome:ci": "biome ci",
+    "type:check": "tsc",
+    "turbo": "pnpm dlx turbo@2.0.9",
+    "check:turbo": "pnpm turbo biome:check type:check",
+    "knip": "knip",
+    "up-interactive": "pnpm up -i",
+    "up-latest": "pnpm up-interactive -L",
+    "release": "cross-env HUSKY=0 commit-and-tag-version",
+    "push-release": "git push --follow-tags origin main",
+    "prepare": "husky"
+  },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.13.3",
@@ -14,36 +37,6 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.2"
-  },
-  "scripts": {
-    "dev": "rsbuild dev",
-    "build": "rsbuild build",
-    "build-and-analyze": "cross-env RSDOCTOR=true pnpm build",
-    "preview": "rsbuild preview",
-    "biome:check": "biome check",
-    "biome:fix": "pnpm biome:check --write",
-    "biome:ci": "biome ci",
-    "type:check": "tsc --noEmit",
-    "turbo": "pnpm dlx turbo@2.0.9",
-    "check:turbo": "pnpm turbo biome:check type:check",
-    "up-interactive": "pnpm up -i",
-    "up-latest": "pnpm up-interactive -L",
-    "release": "cross-env HUSKY=0 commit-and-tag-version",
-    "push-release": "git push --follow-tags origin main",
-    "prepare": "husky",
-    "knip": "knip"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.1",
@@ -69,10 +62,5 @@
     "knip": "^5.30.2",
     "lint-staged": "^15.2.10",
     "typescript": "^5.6.2"
-  },
-  "engines": {
-    "node": ">=20.14.x",
-    "pnpm": ">=9"
-  },
-  "packageManager": "pnpm@9.1.1"
+  }
 }
