@@ -10,7 +10,7 @@
       "inputs": ["biome.json", "src/**"]
     },
     "build": {
-      "dependsOn": ["type:check", "biome:check"],
+      "dependsOn": ["type:check"],
       "outputs": ["dist/**", "public/**"],
       "env": []
     }
