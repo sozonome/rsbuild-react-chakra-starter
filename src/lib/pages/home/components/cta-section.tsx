@@ -13,7 +13,11 @@ export const CTASection = () => {
           isExternal
           href={`https://vercel.com/import/git?s=${repoLink}`}
         >
-          <Image src="https://vercel.com/button" alt="Vercel deploy button" />
+          <Image
+            src="https://vercel.com/button"
+            height={8}
+            alt="Vercel deploy button"
+          />
         </Link>
 
         <Link
@@ -23,6 +27,7 @@ export const CTASection = () => {
         >
           <Image
             src="https://www.netlify.com/img/deploy/button.svg"
+            height={8}
             alt="Netlify deploy button"
           />
         </Link>
@@ -35,7 +40,6 @@ export const CTASection = () => {
           href={`${repoLink}/generate`}
           isExternal
           size="sm"
-          colorScheme="teal"
         >
           Use This Template
         </Button>
@@ -56,6 +60,7 @@ export const CTASection = () => {
             align="center"
             src={`https://img.shields.io/github/stars/sozonome/${repoName}?style=social`}
             alt="github stars"
+            height={5}
           />
         </Link>
       </Flex>
